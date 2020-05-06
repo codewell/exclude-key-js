@@ -1,0 +1,34 @@
+{
+  "name": "@codewell/exclude-keys",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm run build:dev && npm run build:prod",
+    "build:prod": "NODE_ENV=production rollup --config",
+    "build:dev": "NODE_ENV=development rollup --config",
+    "build:local": "npm run build && npm pack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-replace": "^2.3.2",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5",
+    "rollup": "^2.8.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2"
+  }
+}
