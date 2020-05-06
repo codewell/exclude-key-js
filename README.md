@@ -1,4 +1,4 @@
-# @codewell/exclude-keys-js
+# @codewell/exclude-keys
 
 Exclude keys from JavaScript objects.
 
