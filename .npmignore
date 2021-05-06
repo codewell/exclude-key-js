@@ -1,2 +1,4 @@
 tests
 src
+.prettierrc
+rollup.config.js

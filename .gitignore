@@ -113,3 +113,4 @@ dist
 node_modules
 *.tgz
 
+lib
