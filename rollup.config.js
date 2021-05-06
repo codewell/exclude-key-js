@@ -9,6 +9,7 @@ export default {
   output: {
     file: "./lib/index.js",
     format: "cjs",
+    exports: "auto",
   },
   plugins: [
     babel({
